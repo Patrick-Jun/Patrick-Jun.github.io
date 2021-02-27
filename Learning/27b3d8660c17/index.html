@@ -1,30 +1,30 @@
 <!doctype html>
 <html lang="en">
 <head><!-- hexo injector head_begin start -->
-<script src="/config.2c789d40b7b3f5c6def4.js"></script>
+<script src="/config.ba3da2781f8bf77ba24a.js"></script>
 <!-- hexo injector head_begin end -->
 <meta charset="utf-8">
-<title>微信小程序快速上手教程-1 - Patrick Jun's Blog</title>
+<title>微信小程序快速上手教程-2 - Patrick Jun's Blog</title>
 <base href="/">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<link rel="canonical" href="https://www.zzboy.cn/course-wechat-1/">
+<link rel="canonical" href="https://www.zzboy.cn/Learning/27b3d8660c17/">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-<meta name="description" content="这是微信小程序开发入门程序第一节。在学习前，你需要具备一定的html、css和js基础，没有基础当然也可以勇于尝试阅读。 本节学习内容主要有：  小程序注册、开发工具使用 编写并剖析一个简单程序 app.* 介绍 rpx单位 flex布局 常用简单标签">
+<meta name="description" content="第二节内容主要为微信小程序中的基本事件处理以及常用API使用。 本节学习内容主要有：  点击事件 wx.showToast() 列表渲染、条件渲染 setData() wx.showModal() wx.setClipboardData() weui框架简单学习">
 <meta property="og:type" content="website">
-<meta property="og:title" content="微信小程序快速上手教程-1">
-<meta property="og:url" content="https://www.zzboy.cn/course-wechat-1/index.html">
+<meta property="og:title" content="微信小程序快速上手教程-2">
+<meta property="og:url" content="https://www.zzboy.cn/Learning/27b3d8660c17/index.html">
 <meta property="og:site_name" content="Patrick Jun&#39;s Blog">
-<meta property="og:description" content="这是微信小程序开发入门程序第一节。在学习前，你需要具备一定的html、css和js基础，没有基础当然也可以勇于尝试阅读。 本节学习内容主要有：  小程序注册、开发工具使用 编写并剖析一个简单程序 app.* 介绍 rpx单位 flex布局 常用简单标签">
+<meta property="og:description" content="第二节内容主要为微信小程序中的基本事件处理以及常用API使用。 本节学习内容主要有：  点击事件 wx.showToast() 列表渲染、条件渲染 setData() wx.showModal() wx.setClipboardData() weui框架简单学习">
 <meta property="og:locale">
-<meta property="og:image" content="https://www.zzboy.cn/images/wechatminiprogram.jpg">
-<meta property="article:published_time" content="2019-04-22T08:14:00.000Z">
-<meta property="article:modified_time" content="2021-02-27T13:48:36.930Z">
+<meta property="og:image" content="https://www.zzboy.cn/123.jpg">
+<meta property="article:published_time" content="2019-06-27T03:49:00.000Z">
+<meta property="article:modified_time" content="2021-02-27T15:17:06.860Z">
 <meta property="article:author" content="Patrick Jun">
 <meta property="article:tag" content="微信小程序">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://www.zzboy.cn/images/wechatminiprogram.jpg">
-<script type="application/ld+json">[{"@context":"http://schema.org","@type":"WebSite","publisher":{"@type":"Person","name":"Patrick Jun","description":"I'm a FE coder, with a full head of hair.😏","image":"https://www.zzboy.cn/123.jpg"},"url":"https://www.zzboy.cn","image":"https://www.zzboy.cn/123.jpg","description":"偶尔羡慕，努力拥有！","author":{"@type":"Person","name":"Patrick Jun","description":"I'm a FE coder, with a full head of hair.😏","image":"https://www.zzboy.cn/123.jpg"},"inLanguage":{"@type":"Language","alternateName":"en"}},{"@context":"http://schema.org","@type":"Article","articleSection":"Learning","url":"https://www.zzboy.cn/course-wechat-1","headline":"微信小程序快速上手教程-1","image":"/images/wechatminiprogram.jpg","datePublished":"2019-04-22T08:14:00.000Z","dateModified":"2021-02-27T13:48:36.930Z","keywords":"微信小程序","description":"  这是微信小程序开发入门程序第一节。在学习前，你需要具备一定的html、css和js基础，没有基础当然也可以勇于尝试阅读。\n本节学习内容主要有：\n\n小程序注册、开发工具使用\n编写并剖析一个简单程序\napp.* 介绍\nrpx单位\nflex布局\n常用简单标签\n","publisher":{"@type":"Organization","name":"Patrick Jun's Blog","logo":{"@type":"ImageObject","url":"https://www.zzboy.cn/123.jpg"}},"author":{"@type":"Person","name":"Patrick Jun","description":"I'm a FE coder, with a full head of hair.😏","image":"https://www.zzboy.cn/123.jpg"},"inLanguage":{"@type":"Language","alternateName":"en"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.zzboy.cn/course-wechat-1"},"thumbnailUrl":"/images/wechatminiprogram.jpg"}]</script>
+<meta name="twitter:image" content="https://www.zzboy.cn/123.jpg">
+<script type="application/ld+json">[{"@context":"http://schema.org","@type":"WebSite","publisher":{"@type":"Person","name":"Patrick Jun","description":"I'm a FE coder, with a full head of hair.😏","image":"https://www.zzboy.cn/123.jpg"},"url":"https://www.zzboy.cn","image":"https://www.zzboy.cn/123.jpg","description":"偶尔羡慕，努力拥有！","author":{"@type":"Person","name":"Patrick Jun","description":"I'm a FE coder, with a full head of hair.😏","image":"https://www.zzboy.cn/123.jpg"},"inLanguage":{"@type":"Language","alternateName":"en"}},{"@context":"http://schema.org","@type":"Article","articleSection":"Learning","url":"https://www.zzboy.cn/Learning/27b3d8660c17","headline":"微信小程序快速上手教程-2","image":"https://www.zzboy.cn/123.jpg","datePublished":"2019-06-27T03:49:00.000Z","dateModified":"2021-02-27T15:17:06.860Z","keywords":"微信小程序","description":"  第二节内容主要为微信小程序中的基本事件处理以及常用API使用。\n本节学习内容主要有：\n\n点击事件\nwx.showToast()\n列表渲染、条件渲染\nsetData()\nwx.showModal()\nwx.setClipboardData()\nweui框架简单学习\n","publisher":{"@type":"Organization","name":"Patrick Jun's Blog","logo":{"@type":"ImageObject","url":"https://www.zzboy.cn/123.jpg"}},"author":{"@type":"Person","name":"Patrick Jun","description":"I'm a FE coder, with a full head of hair.😏","image":"https://www.zzboy.cn/123.jpg"},"inLanguage":{"@type":"Language","alternateName":"en"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.zzboy.cn/Learning/27b3d8660c17"}}]</script>
 <script async src="//www.googletagmanager.com/gtag/js?id=UA-145085627-1"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','UA-145085627-1');</script>
 

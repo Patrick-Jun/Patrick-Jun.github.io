@@ -1,30 +1,30 @@
 <!doctype html>
 <html lang="en">
 <head><!-- hexo injector head_begin start -->
-<script src="/config.2c789d40b7b3f5c6def4.js"></script>
+<script src="/config.ba3da2781f8bf77ba24a.js"></script>
 <!-- hexo injector head_begin end -->
 <meta charset="utf-8">
-<title>微信小程序快速上手教程-2 - Patrick Jun's Blog</title>
+<title>微信小程序快速上手教程-3 - Patrick Jun's Blog</title>
 <base href="/">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<link rel="canonical" href="https://www.zzboy.cn/course-wechat-2/">
+<link rel="canonical" href="https://www.zzboy.cn/Learning/15a3161286d7/">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-<meta name="description" content="第二节内容主要为微信小程序中的基本事件处理以及常用API使用。 本节学习内容主要有：  点击事件 wx.showToast() 列表渲染、条件渲染 setData() wx.showModal() wx.setClipboardData() weui框架简单学习">
+<meta name="description" content="这一节我们将实现个人课程表小程序开发！ 内容主要有：  可滑动视图：scroll-view 网络请求：wx.request 滚动选择器：picker 表单容器：form 页面切换">
 <meta property="og:type" content="website">
-<meta property="og:title" content="微信小程序快速上手教程-2">
-<meta property="og:url" content="https://www.zzboy.cn/course-wechat-2/index.html">
+<meta property="og:title" content="微信小程序快速上手教程-3">
+<meta property="og:url" content="https://www.zzboy.cn/Learning/15a3161286d7/index.html">
 <meta property="og:site_name" content="Patrick Jun&#39;s Blog">
-<meta property="og:description" content="第二节内容主要为微信小程序中的基本事件处理以及常用API使用。 本节学习内容主要有：  点击事件 wx.showToast() 列表渲染、条件渲染 setData() wx.showModal() wx.setClipboardData() weui框架简单学习">
+<meta property="og:description" content="这一节我们将实现个人课程表小程序开发！ 内容主要有：  可滑动视图：scroll-view 网络请求：wx.request 滚动选择器：picker 表单容器：form 页面切换">
 <meta property="og:locale">
 <meta property="og:image" content="https://www.zzboy.cn/123.jpg">
-<meta property="article:published_time" content="2019-06-27T03:49:00.000Z">
-<meta property="article:modified_time" content="2021-02-27T13:48:40.059Z">
+<meta property="article:published_time" content="2019-07-29T05:45:00.000Z">
+<meta property="article:modified_time" content="2021-02-27T15:17:14.560Z">
 <meta property="article:author" content="Patrick Jun">
 <meta property="article:tag" content="微信小程序">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://www.zzboy.cn/123.jpg">
-<script type="application/ld+json">[{"@context":"http://schema.org","@type":"WebSite","publisher":{"@type":"Person","name":"Patrick Jun","description":"I'm a FE coder, with a full head of hair.😏","image":"https://www.zzboy.cn/123.jpg"},"url":"https://www.zzboy.cn","image":"https://www.zzboy.cn/123.jpg","description":"偶尔羡慕，努力拥有！","author":{"@type":"Person","name":"Patrick Jun","description":"I'm a FE coder, with a full head of hair.😏","image":"https://www.zzboy.cn/123.jpg"},"inLanguage":{"@type":"Language","alternateName":"en"}},{"@context":"http://schema.org","@type":"Article","articleSection":"Learning","url":"https://www.zzboy.cn/course-wechat-2","headline":"微信小程序快速上手教程-2","image":"https://www.zzboy.cn/123.jpg","datePublished":"2019-06-27T03:49:00.000Z","dateModified":"2021-02-27T13:48:40.059Z","keywords":"微信小程序","description":"  第二节内容主要为微信小程序中的基本事件处理以及常用API使用。\n本节学习内容主要有：\n\n点击事件\nwx.showToast()\n列表渲染、条件渲染\nsetData()\nwx.showModal()\nwx.setClipboardData()\nweui框架简单学习\n","publisher":{"@type":"Organization","name":"Patrick Jun's Blog","logo":{"@type":"ImageObject","url":"https://www.zzboy.cn/123.jpg"}},"author":{"@type":"Person","name":"Patrick Jun","description":"I'm a FE coder, with a full head of hair.😏","image":"https://www.zzboy.cn/123.jpg"},"inLanguage":{"@type":"Language","alternateName":"en"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.zzboy.cn/course-wechat-2"}}]</script>
+<script type="application/ld+json">[{"@context":"http://schema.org","@type":"WebSite","publisher":{"@type":"Person","name":"Patrick Jun","description":"I'm a FE coder, with a full head of hair.😏","image":"https://www.zzboy.cn/123.jpg"},"url":"https://www.zzboy.cn","image":"https://www.zzboy.cn/123.jpg","description":"偶尔羡慕，努力拥有！","author":{"@type":"Person","name":"Patrick Jun","description":"I'm a FE coder, with a full head of hair.😏","image":"https://www.zzboy.cn/123.jpg"},"inLanguage":{"@type":"Language","alternateName":"en"}},{"@context":"http://schema.org","@type":"Article","articleSection":"Learning","url":"https://www.zzboy.cn/Learning/15a3161286d7","headline":"微信小程序快速上手教程-3","image":"https://www.zzboy.cn/123.jpg","datePublished":"2019-07-29T05:45:00.000Z","dateModified":"2021-02-27T15:17:14.560Z","keywords":"微信小程序","description":"  这一节我们将实现个人课程表小程序开发！\n内容主要有：\n\n可滑动视图：scroll-view\n网络请求：wx.request\n滚动选择器：picker\n表单容器：form\n页面切换\n","publisher":{"@type":"Organization","name":"Patrick Jun's Blog","logo":{"@type":"ImageObject","url":"https://www.zzboy.cn/123.jpg"}},"author":{"@type":"Person","name":"Patrick Jun","description":"I'm a FE coder, with a full head of hair.😏","image":"https://www.zzboy.cn/123.jpg"},"inLanguage":{"@type":"Language","alternateName":"en"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.zzboy.cn/Learning/15a3161286d7"}}]</script>
 <script async src="//www.googletagmanager.com/gtag/js?id=UA-145085627-1"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','UA-145085627-1');</script>
 
